@@ -1,0 +1,1399 @@
+/****** GLOBAL ******/
+    * {
+        font-family: 'Lexend', sans-serif;
+    }
+    hr {
+        color: #475826;
+    }
+    body {
+        background-color: #FAF0E1;
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+
+/* Airrick added this remove if it mucks up things*/
+    body {
+        display: flex;
+        flex-direction: column;  
+    }
+
+    main {
+        flex-grow: 1;
+    }
+
+/****** Helper ******/
+    .flex {
+        display: flex;
+    }
+    .flex-start {
+        align-content: flex-start;
+    }
+    .alight-end {
+        align-items: flex-end;
+    }
+    .flex-middle {
+        justify-content: center;
+    }
+    .flex-row {
+        flex-direction: row;
+    }
+    .flex-between {
+        justify-content: space-between;
+    }
+    .flex-around {
+        justify-content: space-around;
+    }
+    .center {
+        align-items: center;
+    }
+    .strech {
+        align-items: stretch;
+    }
+
+    .flex-end {
+        justify-content: flex-end;
+    }
+    .menu a {
+        text-decoration: none;
+        justify-content: space-around;
+        color:#475826;
+    }
+    .left-pad {
+        padding-left: .1rem;
+    }
+
+    .right-pad {
+        padding-right: .75rem;
+    }
+    .top-pad {
+        padding-top: .75rem;
+    }
+
+
+/****** MAIN ******/
+    .page-content {
+        width: 100%;
+        padding-top: 2rem;
+        /* padding-bottom: 5rem; */
+    }
+    .about-page-content {
+        width: 100%;
+        padding-top: 2rem;
+
+    }
+
+    .intro {
+        padding-left: 2rem;
+        padding-right:2rem;
+        justify-content: space-around;
+        z-index: 400;
+        align-self: center;
+    }
+    .intro p{
+        font-weight: 100;
+    }
+    .container {
+        display: flex;
+
+    }
+    .welcome {
+        padding-bottom: 3rem;
+        overflow: hidden;
+        height: auto;
+        
+    }
+    .about {
+        display: flex;
+        justify-content: center;
+    }
+    .discipline-intro {
+        margin: 3rem;
+    }
+    .cato-section {
+    display: block;
+    padding-bottom: 3rem;
+}
+.petuina-bio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.petuina-bio ul {
+    margin-left: -10px;
+}
+.pitch {
+    padding-top: 1rem;
+}
+.about-container p{
+    padding-bottom: 1rem;
+}
+.about-container h2 {
+    line-height: 3rem;
+}
+
+/****** IMAGES ******/
+    .head-shot {
+        position: relative;
+        border-radius: 50%;
+        margin-left: 3rem;
+        margin-bottom: 1rem;
+        height: 200px;
+        width: 200px;
+        z-index: 400;
+    }
+    .about-selfie{
+        height: 200px;
+        width: auto;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .card-img .banner_small{
+        display: none;
+    }
+    .card-img .banner {
+        display: block;
+    }
+    .petuina-circle {
+        display: block;
+        height: 250px;
+        width: auto;
+        border-radius: 50%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .petuina {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+        width: auto;
+        padding: 1rem;
+    }
+    .cato-logo {
+        max-width: 200px;
+        display: flex;
+        margin: 0 auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+/********* ARTIFACT IMAGES *********/
+.maitaime_banner{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+}
+    .amazon-logo {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .glamazon-logo {
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .artifact-banner {
+        width: 100vw;
+        height: auto;
+        display: block;
+        margin-top: -2rem;
+    }
+    .art-con img{
+        padding-bottom: 1 2rem 2rem 1rem;
+    }
+    .thumb-img {
+        margin: 1rem;
+        max-width: 100px;
+    }
+    .cato-wireframes .thumb-img {
+        max-width: 300px;
+    }
+    .cato-wireframes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+/****** TYPOGRAPHY ******/
+    h1 {
+        color: #475826;
+    }
+    h2 {
+        color: #475826;
+    }
+    h3 {
+        color: #475826;
+        font-size: 2.5rem;
+    }
+    h4 {
+        color: #475826;
+    }
+    h5 {
+        color: #475826;
+    }
+    p {
+        color: #475826;
+        font-weight: 200;
+        font-size: 1.2rem;
+    }
+    .a {
+        text-decoration: none;
+    }
+     .intro h1 {
+        font-weight: 200;
+        font-size: 1rem;
+        letter-spacing: .1rem;
+        line-height: 1.4rem;
+    }
+    .intro h2 {
+        font-weight: 700;
+        font-size: 1.2rem;
+        letter-spacing: .2rem;
+        line-height: 1.2rem;
+        padding-bottom: 1rem;
+    
+    }
+    .intro a {
+        color: #475826;
+    }
+    .intro p {
+        font-weight: 200;
+        font-size: 1rem;
+        letter-spacing: .1rem;
+        line-height: 1.5rem;
+
+    }
+    .main-timeline9 a {
+        text-decoration: none;
+        color: #B97831;
+    }
+    .art-con a{
+        text-decoration: none;
+        color: #B97831;
+    }
+    .feat-head {
+        padding: 1.5rem 0rem 1.5rem 0rem;
+        letter-spacing:.2rem; 
+        display: flex; 
+    }
+    hr{
+        /* width: 60%; */
+        border-color: #475826;
+    }
+    span {
+        font-size: 45px;
+      }
+    .discipline-intro h2 {
+        font-weight: 700;
+        font-size: 2rem;
+        letter-spacing: .2rem;
+        padding-bottom: .3rem;
+    }  
+    .discipline-intro h1 {
+        font-weight: 400;
+        font-size: .8rem;
+        letter-spacing: .2rem;
+    }
+    .cato-section h2 {
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 3rem;
+    }
+    .cato-section p {
+        line-height: 2rem;
+        font-size: .5rem; 
+    }
+    .cato-section h4 {
+    line-height: 2rem;
+    font-size: .5rem; 
+    }
+.persona h5{
+    padding-bottom: 1rem;
+    padding-top: 1.5rem
+}
+
+.market h3 {
+    font-weight: 200;
+    font-size: 1rem;;
+}
+
+
+.art-intro-category h3 {
+    padding-bottom: .7rem;
+}
+.visually-hidden {
+    visibility: hidden;
+}
+.card-desc {
+    line-height: 1.25rem;
+
+}
+
+/********* TYPO ANIMATIN **********/
+.animate-reveal {
+    opacity: 0;
+    -webkit-animation: reveal 500ms cubic-bezier(0, 1, 0.5, 1) 3 normal forwards;
+       -moz-animation: reveal 500ms ease-in 1 normal forwards;
+         -o-animation: reveal 500ms cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+            animation: reveal 500ms cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+  }
+  
+  .animate-first {
+    -webkit-animation-delay: 100ms;
+       -moz-animation-delay: 100ms;
+         -o-animation-delay: 100ms;
+            animation-delay: 100ms;
+  }
+  
+  .animate-second {
+    -webkit-animation-delay: 500ms;
+       -moz-animation-delay: 500ms;
+         -o-animation-delay: 500ms;
+            animation-delay: 500ms;
+  }
+  
+  .animate-third {
+    -webkit-animation-delay: 650ms;
+       -moz-animation-delay: 650ms;
+         -o-animation-delay: 650ms;
+            animation-delay: 650ms;
+  }
+  .animate-fourth {
+    -webkit-animation-delay: 750ms;
+       -moz-animation-delay: 750ms;
+         -o-animation-delay: 750ms;
+            animation-delay: 750ms;
+  }
+  
+  @-webkit-keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  @-moz-keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  @-o-keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  @keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+
+/******** LIST STYLES ********/
+.cato-section li {
+    color: #475826;
+    list-style: none;
+    position: relative;
+    line-height: 1.4rem;
+    font-size: .9rem;
+    margin-left: .8rem;
+    margin-bottom: .7rem;
+    font-weight: 200;
+  }
+  
+ .cato-section li:before {
+    content: "\01F324 \FE0F";
+    top: 12px;
+    left: 5px;
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+  }  
+  .functionallity {
+    margin-top: 2rem;
+  }
+  .functionallity li {
+    color: #475826;
+    list-style: none;
+    position: relative;
+    line-height: 1.4rem;
+    font-size: .8rem;
+    margin-left: .8rem;
+    margin-bottom: .7rem;
+    font-weight: 200;
+  }
+  
+ .functionallity li:before {
+    content: "\01F324 \FE0F";
+    top: 12px;
+    left: 5px;
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+  }   
+/****** PROJECT CARDS ******/
+
+.feature-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin-bottom: 1.9rem; */
+    padding-bottom: 1.9rem;
+    background-color: #FCF5EB;
+    width: 100%;
+    height: auto;
+    box-shadow: 4px 8px 12px 0px rgba(0,0,0,0.2);
+    text-decoration: none;
+    z-index: 5;
+
+}
+.card {
+    color: #FCF5EB;
+    width: 350px;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 4px 8px 12px 0px rgba(0,0,0,0.2);
+    border-radius: 15px ;
+    text-decoration: none;
+    margin-bottom: 2.5rem;
+   
+
+}
+.card-text {
+    color: #475826;
+    padding: 1rem;
+    text-decoration: none;
+
+
+}
+.card-content h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    margin: 1rem;
+
+}
+
+.card-content p {
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.card img {
+    width: 350px;
+    height: 126.67px;
+    border-radius: 15px 15px 0 0;
+}
+.cato-section h4 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.acknowledge p {
+    font-size: .7rem;
+    margin: 1rem 3rem;
+}
+
+
+/****** Artifacts ******/
+    .art-content {
+        width: 100%;
+        top: 0;
+
+    }
+    .art-container {
+       margin-left: 2rem;
+       margin-right: 2rem;
+    }
+
+    .art-head {
+        display: flex;
+        line-height: 20px;
+        flex-direction: column;
+    }
+    .art-head hr {
+        display: flex;
+        margin-left: 0;
+        max-width: 10rem;
+}
+    .art-container h1 {
+        font-weight: 400;
+        font-size: 2rem;
+        padding-top: 1rem;
+    }
+    .art-container h2 {
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 3rem;
+        margin-bottom: .4rem;
+    }
+    .art-container h3 {
+        font-weight: 400;
+        font-size: 1.2rem;
+        /* margin-top: 1.5rem; */
+
+    }
+    .art-container h4 {
+        font-weight: 400;
+        font-size: 1rem;
+        margin-bottom: .5rem;
+    }
+    .art-container p{
+        font-weight: 200;
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    .persona {
+        padding: .5rem 1rem 1rem 2rem;
+        box-shadow: 4px 8px 12px 0px rgba(0,0,0,0.2);
+        margin-bottom: 3rem;
+    }
+    .art-intro-category {
+        padding-bottom: 1.5rem;
+    }
+    .market {
+        padding: .5rem 1rem 1rem 1rem;
+        box-shadow: 4px 8px 12px 0px rgba(0,0,0,0.2);
+        margin-bottom: 1rem;
+        }
+
+        .figma-embed{ 
+            width:65%;
+            height: auto;
+            display:flex; }
+/********* BUTTONS *********/
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: fit-content;
+}
+.glam-btn {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bn3637 {
+    margin-left: 1rem;  
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem .5rem;
+    font-weight: 400;
+    font-size: .7rem;
+    letter-spacing: .4rem;
+    text-align: center;
+    text-decoration: none;
+    color: #FAF0E1;
+    background-color: #808E4A;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+  }
+  .bn38 {
+    border-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+    
+  .bn38:hover {
+    background-color: #475826;
+  }
+.artifact-button {
+    justify-content: space-between
+}
+/* .card-text .btn {
+    margin-left: 2rem;
+} */
+/**********************************************************************
+MEDIA QUERIES
+***********************************************************************/
+@media (min-width: 480px){
+    .page-content {
+        margin: auto;
+        padding-top: 4rem;
+        /* padding-bottom: 3rem; */
+    }
+    .feat-head {
+        padding-right: 14rem;
+    }
+    .about-page-content {
+        padding-top: 5rem;
+    }
+    .site-header__menu {
+        height: 50px;
+    }
+    .intro {
+        margin: 1rem;
+    }
+    .intro h1 {
+        line-height: 1.5;
+
+    }
+    .intro h2 {
+        font-weight: 700;
+        font-size: 1.7rem;
+        letter-spacing: .2rem;
+        line-height: 1.5rem;
+    }
+    .about-selfie {
+        height: 300px;
+        width: auto;
+    }
+    .card-img .banner_small{
+        display: none;
+    }
+    .card-img .banner {
+        display: block;
+    }
+    .discipline-intro {
+        margin: 3rem 5rem 3rem 5rem;
+    }
+    .art-container h2 {
+        font-size: 1.5rem;
+    }
+    .petuina-circle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .thumb-img {
+        max-width: 100px;
+    }
+    .cato-wireframes .thumb-img {
+        max-width: 400px;
+    }
+    .functionallity {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 380px;
+        padding: .5rem 1rem 1rem 2rem;
+        /* box-shadow: 0 8px 12px 0px rgba(0,0,0,0.2); */
+        margin-bottom: 3rem;
+    }
+    .art-intro-section {
+        padding: 2rem 0;
+    }
+
+}
+
+@media (min-width: 600px) {
+    
+    .art-intro-category hr {
+        width: auto;
+        left: 0;
+    }
+    .art-intro-category h3 {
+        justify-content: space-around;
+    }
+    .market {
+        min-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .market p {
+        margin-left: 1.5rem;
+    }
+
+    .persona {
+        min-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .functionallity {
+        display: block;
+        max-width: 600px;
+        margin: 0 auto;
+        /* box-shadow: 0 8px 12px 0px rgba(0,0,0,0.2); */
+        margin-bottom: 3rem;
+    }
+    .functionallity li {
+        color: #475826;
+        list-style: none;
+        position: relative;
+        line-height: 1.4rem;
+        font-size: .8rem;
+        margin-left: .8rem;
+        margin-bottom: .7rem;
+        font-weight: 200;
+    }
+    .functionallity li:before {
+        content: "\01F324 \FE0F";
+        top: 12px;
+        left: 5px;
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+    }
+    /********* IMAGES **********/
+    .head-shot {
+        border-radius: 50%;
+        margin-left: 3rem;
+        margin-bottom: 1rem;
+        height: 300px;
+        width: 300px;
+        box-shadow: 4px 8px 12px 0px rgba(0,0,0,0.2);
+
+    }
+    .about-selfie {
+        display: flex;
+        justify-content: center;
+        height: 400px;
+        width: auto;
+        margin-top: 2.5rem;
+        margin-right: 3rem;
+    }
+    .thumb-img {
+        max-width: 150px;
+    }
+    .cato-wireframes .thumb-img {
+        max-width: 400px;
+    }
+
+
+}
+
+@media (min-width: 736px){
+    .page-content {
+        margin: auto;
+        padding-top: 6rem;
+        /* padding-bottom: 2rem; */
+    } 
+
+    .intro {
+        max-width: 45rem;
+    }
+    .intro h2 {
+        font-weight: 700;
+        font-size: 2.2rem;
+        letter-spacing: .2rem;
+        line-height: 2.3rem;
+    }
+    .intro h1 {
+        font-weight: 200;
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+        line-height: 1.4;
+
+    }
+    .intro p {
+        font-weight: 200;
+        font-size: .7rem;
+        letter-spacing: .1rem;
+        line-height: 1.4;
+
+    }
+    .btn {
+        margin-top: -.5rem;
+    }
+    .feat-head h4{
+    margin-top: 3rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 3rem;
+    }
+    span {
+        font-size: 60px;
+      }
+      .welcome {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+    .about {
+        order: 2;
+    }
+    .about-container {
+    display:flex;
+    justify-content: center;
+} 
+    .about-selfie {
+        margin-top: 4.5rem;
+    }
+    .discipline-intro {
+        margin: 3rem 8rem 3rem 8rem;
+    }
+    .discipline-intro h2 {
+        font-weight: 700;
+        /* font-size: 3rem; */
+        letter-spacing: .2rem;
+        padding-bottom: .3rem;
+    }  
+    .discipline-intro h1 {
+        font-weight: 400;
+        font-size: 1.1rem;
+        letter-spacing: .2rem;
+    }
+    .artifact-banner {
+        margin-top: -3rem;
+    }
+    .thumb-img {
+        max-width: 200px;
+        justify-content: space-around;
+    }
+    .cato-wireframes .thumb-img {
+        max-width: 500px;
+    }
+    .art-intro-section{
+        display: flex;
+        width: 100wv;
+        margin: 0 auto;
+        overflow: hidden;;
+        box-shadow: 0 8px 12px 0px rgba(0,0,0,0.2);
+        text-decoration: none;
+        margin-bottom: 3rem;
+        margin-top: 1.5rem;
+    }
+    .art-intro-category{
+        justify-content: space-between;
+    }
+    .art-intro-category {
+        margin: 0 auto;
+        padding: .5rem;
+    }
+    .cato-logo {
+        max-width: 400px; 
+    }
+    .functionallity {
+        max-width: 650px;
+    }
+
+    .petuina-circle {
+        height: 300px;
+        width: auto;
+    }
+    .petuina {
+        width: 350px;
+        height:auto;
+        padding: 1rem;
+    }
+    .petuina-bio h4 {
+        font-size: 1.5rem;
+    }
+    .petuina-bio li {
+        font-size: 1rem;
+    }
+    .petuina-intro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 50%
+    }
+    .petuina-bio {
+        padding-left: 1rem;
+    }
+    .cato-section h5{
+        font-size: 1.2rem;
+        padding-bottom: .5rem;
+    }
+    .market {
+
+        min-width: 750px;
+        padding: 1rem 2.5rem 2.5rem 2rem;
+    }
+
+    .functionallity h2 {
+        padding: 1rem;
+        font-size: 2rem;
+      }
+      .page-content li {
+        font-size: 1rem;
+        line-height: 2rem;
+      }
+      .user-goals {
+        max-width: 80%;
+        margin: 0 auto;
+      }
+
+
+
+}
+
+@media (min-width: 800px) {
+
+    .art-container h1 {
+        font-weight: 400;
+        font-size: 4rem;
+        padding-top: 1rem;
+    }
+
+    .discipline-intro {
+        margin: 3rem 4rem 3rem 4rem;
+    }
+    .discipline-intro h2 {
+        font-weight: 700;
+        letter-spacing: .2rem;
+        padding-bottom: .3rem;
+    }  
+    .art-container h1 {
+
+        font-size: 4rem;
+        letter-spacing: .2rem;
+    }
+    .art-container h2 {
+
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 0.4rem;
+    }
+    .persona p{
+        line-height: 2.3rem;
+    }
+    .scenario {
+        display:flex;
+    }
+    .petuina {
+        margin-top:-50px;
+    }
+    .petuina-circle{
+        margin-left: 3rem;
+    }
+    
+        /******** ARTIFACT CARDS **********/
+        .welcome {
+            display: flex;
+            padding: 5rem 0 5rem 0;
+        }
+
+        .feat-head {
+            padding-right: 37rem;
+            font-size: 1.2rem;
+            font-weight: 400;
+}
+        .feat-head h4{
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+        .card {
+            background-color: #FCF5EB;
+            width: 700px;
+            height: 204px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 8px 12px 0px rgba(0,0,0,0.2);
+            border-radius: 15px ;
+            text-decoration: none;
+            /* gap: 16px; */
+        }
+        .card-text {
+            color: #475826;
+            padding: 1.2rem;
+            text-decoration: none;
+            margin-left: 24rem;
+            margin-top: -14rem;
+            
+        }
+        .card-content h4 {
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1.2rem;
+    
+        }
+        
+
+        .card-content .card-dis {
+            font-size: .8rem;
+    
+        }
+        
+        .card img {
+            width: auto;
+            height: 204px;
+            max-width: 400px;
+            overflow: hidden;
+            object-fit: cover;
+            border-radius: 15px 0 0 15px;
+        } 
+        .card-img .banner_small{
+            display: block;
+        }
+        .card-img .banner {
+            display: none;
+        }
+        
+        .bn3637 {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.3rem .5rem;
+            font-weight: 400;
+            font-size: .8rem;
+            letter-spacing: .4rem;
+            text-align: center;
+            text-decoration: none;
+            color: #FAF0E1;
+            background-color: #808E4A;
+            backface-visibility: hidden;
+            border: 0.3rem solid transparent;
+            border-radius: 3rem;
+          }
+        }
+
+@media (min-width: 1024px) {
+.welcome {
+    padding-top: 9rem;
+}
+.page-content {
+
+    /* margin-bottom: 3rem; */
+}
+.intro h2 {
+    line-height: 3rem;
+    padding-bottom: 1.5rem;
+    
+}
+.intro p {
+    font-size: 1rem;
+}
+.about-container {
+    display:flex;
+    margin: 3rem;
+} 
+span {
+    font-size: 5rem;
+  }
+.about-selfie {
+    height: 475px;
+    margin-top: 1rem;
+}
+.head-shot {
+    border-radius: 50%;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    height: 350px;
+    width: 350px;
+}
+.feat-head h4{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.discipline-intro {
+    margin: 3rem 12rem 3rem 12rem;
+}
+.art-container p {
+    font-size:1.2rem;
+}
+.petuina-bio li {
+    font-size: 1.2rem;
+}
+.welcome h2 {
+    font-size: 3.2rem;
+}
+.cato-logo {
+    max-width: 500px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+.functionallity li {
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+.art-container h2 {
+    font-size: 3rem;
+}
+.persona {
+    margin-top: 1rem;
+    padding: 3rem 5rem;
+}
+.persona p{
+    line-height: 2.7rem;
+}
+.petuina {
+        width: 350px;
+        height: 520px;
+        object-fit: cover;
+        margin-top: -50px;
+
+
+    }
+.persona h5 {
+    padding-bottom: 1.5rem;
+}
+.persona p {
+    padding-bottom: 1.5rem;
+}
+.user-goals {
+    padding-bottom: 3rem;
+}
+.user-goals h2 {
+    padding-bottom: 2rem;
+}
+.user-goals li {
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+.market {
+    margin-bottom: 3rem;
+}
+.market h3 {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+.market h4 {
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+.market p {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+}
+
+@media (min-width: 1200px) {
+.art-container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.head-shot {
+    margin-top: 1rem;
+
+}
+.thumb-img {
+    max-width: 320px;
+}
+
+.welcome {
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: center;
+    padding-top: 2rem;
+    /* padding-bottom: 10rem; */
+
+}
+.intro h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    line-height: 3rem; 
+    padding-bottom: 2rem;
+}
+.intro h1 {
+    font-weight: 200;
+    font-size: 1.7rem;
+    letter-spacing: .1rem;
+}
+
+.feature-section {
+    gap: 16px;
+}
+.feat-head {
+    padding-right: 53rem;
+}
+.feat-head h4{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.discipline-intro h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    padding-bottom: .3rem;
+}  
+.discipline-intro h1 {
+    font-weight: 400;
+    font-size: 1.75rem;
+    letter-spacing: .2rem;
+}
+.discipline-intro {
+    margin: 3rem 10rem 3rem 10rem;
+}
+
+
+  .about-container{
+    margin-top: 2rem;
+    margin-left: 5rem;
+
+  }
+  .cato-section .thumb-img {
+    max-width: 600px;
+}
+}
+
+@media (min-width: 1440px) {
+    .welcome {
+        margin: -1rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    
+    .intro h2 {
+        /* margin-left: -9rem;
+        font-weight: 700;
+        font-size: 5rem;
+        letter-spacing: .2rem;
+        line-height: 1.2; */
+    }
+
+
+    .intro {
+        margin: 3rem 5rem;
+    }
+    .head-shot {
+        height: 450px;
+        width: 450px;
+        margin-right: 5rem;
+
+    }
+    .about-container {
+        margin-left: 8rem;
+    }
+    .art-container {
+        margin-left: 12rem;
+        margin-right: 12rem;
+    }
+    .about-selfie {
+        height: 600px;
+        width: auto;
+        margin-top: 2rem;
+    }
+    
+    .card-content .card-desc {
+        font-size: 1.4rem;
+    }
+    .card {
+        background-color: #FCF5EB;
+        width: 1100px;
+        height: 304px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 8px 12px 0px rgba(0,0,0,0.2);
+        border-radius: 15px ;
+        text-decoration: none;
+    }
+    .card-text {
+        color: #475826;
+        padding: 1.4rem;
+        text-decoration: none;
+        margin-left: 37rem;
+        margin-top: -20rem;
+        
+    }
+    
+    .card-content .card-desc {
+        font-size: 1.2rem;
+        
+    
+    }
+    .card-content .card-dis {
+        font-size: 1.4rem;
+    
+    }
+    .card-content h4 {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2rem;
+         margin: 1rem;
+    
+    }
+    
+    .card-content p {
+        font-size: 1.2rem;
+        margin: 1rem;
+        line-height: 1.4rem;
+    }
+    .card img {
+        width: auto;
+        height: 304px;
+        max-width: 700px;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 15px 0 0 15px;
+    } 
+    .card-img .banner_small{
+        display: block;
+    }
+    .card-img .banner {
+        display: none;
+    }
+    .btn {
+        margin-top: 2.5rem;
+    }
+
+    .bn3637 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.3rem .5rem;
+        font-weight: 400;
+        font-size: 1rem;
+        letter-spacing: .4rem;
+        text-align: center;
+        text-decoration: none;
+        color: #FAF0E1;
+        background-color: #808E4A;
+        backface-visibility: hidden;
+        border: 0.3rem solid transparent;
+        border-radius: 3rem;
+      }
+
+    }
+

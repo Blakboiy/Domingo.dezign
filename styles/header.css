@@ -1,0 +1,228 @@
+/* Site Header */
+.site-header {
+    display: block;
+    width: 100vw;
+    height: 3rem;
+    background: #b6be93;
+    z-index: 99999;
+}
+
+.site-header__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.site-header__logo {
+    padding: 13px 0;
+    text-align: center;
+}
+
+.site-header__logo img {
+    width: 100px;
+    display: inline-block;
+}
+
+.site-header__menu { 
+    overflow: hidden;
+    width: 17.5rem;
+    height: 100%;
+    position: absolute;
+    background-color: #D5D2BA;
+    box-shadow: var(--box-shadow);
+    top: 0rem;
+    right: -1rem;
+    transform: translateX(100%);
+    transition: transform 0.25s ease;
+}
+
+.site-header__menu.open {
+    transform: translateX(0);
+    height: 100vh;
+    width: 100vw;
+    right: 0rem;
+
+
+}
+
+.site-header__menu a {
+    color: #475826;
+    display: block;
+    border-bottom: 1px solid #35411c;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+
+}
+
+
+
+.site-header__close {
+    font-size: 1.5rem;
+    position: bottom;
+    right: 0;
+    padding: 0;
+}
+
+.site-header__close a {
+    border-bottom: unset;
+    padding: 0.75rem;
+}
+
+/* Icon */
+.site-header__menu-icon {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: var(--box-shadow);
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+.site-header__menu-icon a {
+    color: #475826;
+    line-height: 0;
+    padding: 0.5rem;
+}
+
+.site-header__menu-icon:hover {cursor: pointer; }
+
+
+
+/*******************************************************/
+
+	
+@media (min-width: 360px) {
+    .site-header {
+        top: unset;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;    }
+        
+    .site-header__logo img {
+        width: 7rem;
+
+    }
+
+    .site-header__menu { 
+        position: fixed;
+        bottom: 0;
+}
+.site-header__menu a {
+    line-height: 5rem;
+}
+}
+/*******************************************************/
+
+@media (min-width: 480px) {
+    .home{
+        display: none;
+        visibility: hidden;
+    }
+    
+    .site-header {
+        bottom: unset;
+        display: block;
+        width: 100vw;
+        height: 3rem;
+        background: rgb(182,190,147);
+        background: linear-gradient(180deg, rgba(182,190,147,1) 0%, rgba(182,190,147,0.9276304271708683) 70%, rgba(250,240,225,0) 100%);
+    }
+
+    .site-header__menu {
+        position: fixed;
+        top: 0;
+        right: .2rem;
+        padding: 1rem 1rem 0 1rem;
+        transform: unset !important;     
+    }
+
+    .site-header__close,
+    .site-header__menu-icon {
+        display: none;
+    }
+
+    .site-header__menu {
+        background-color: unset;
+        box-shadow: unset;
+    }
+
+    .site-header__menu ul {
+        border-radius: unset;
+        display: flex;
+        gap: 1.5rem;
+
+    }
+
+    .site-header__menu a {
+        color: #35411c;
+        font-size: .5rem;
+        display: inline-block;
+        border-bottom: unset;
+        padding: unset;
+        line-height: 0rem;
+        }
+    
+    .site-header__menu {
+        width: unset;
+    }
+
+    .site-header__logo img {
+        width: 7.5rem;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 3rem;
+
+    }
+    .site-header__logo {
+        width: 100%;
+        padding: 13px 0;
+        text-align: center;
+    }
+
+}
+/*******************************************************/
+@media (min-width: 736px) {
+.site-header {
+        bottom: unset;
+        display: block;
+        width: 100vw;
+        height: 4.1rem;
+    }
+.site-header__menu {
+    height: 40px;
+}
+.site-header__logo img {
+    width: 8.5rem;
+
+}
+    .site-header__menu a {
+        color: #35411c;
+        font-size: .7rem;
+        display: inline-block;
+        border-bottom: 50px;
+        padding: unset;
+        line-height: 0rem;
+
+    }  
+}
+@media (min-width: 1024px) {
+ 
+    .site-header__logo img {
+        width: 9.5rem;
+    
+    }
+}
+@media (min-width: 1200px) {
+    .site-header__logo img {
+        width: 9rem;
+    
+    }
+
+    }
